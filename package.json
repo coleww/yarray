@@ -4,7 +4,7 @@
   "description": "1.5 way data-binding between an array and some dom inputs",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "browserify test.js | testling | tap-nyan"
   },
   "keywords": [
     "data",
@@ -15,6 +15,9 @@
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
   "license": "MIT",
   "devDependencies": {
-    "tap": "^1.0.4"
+    "browserify": "^10.1.3",
+    "tap-nyan": "0.0.2",
+    "tape": "^4.0.0",
+    "testling": "^1.7.1"
   }
 }
