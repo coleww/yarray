@@ -8,11 +8,11 @@ module.exports = function(array){
     el.addEventListener("change", function update(e){
       array[~~e.target.dataset.index] = e.target.value
     });
-    els.push(el);
+    els.push(el)
   })
   return {
     update: function(newArr){
-      // if(newArr.length !== array.length) throw('stuff')
+      if(newArr.length !== array.length) throw "array length mismatch"
       array = newArr;
       array.forEach(function(val, i){
         els[i].value = val

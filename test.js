@@ -37,12 +37,12 @@ tap.test('binds all the things', function(t){
   t.looseEqual(one, ['foo', '2', '3'], 'old array is left alone')
 })
 
-// tap.test('throws error if updated array lengths do not match', function(t){
-//   t.plan(5)
-//   var one = ['1', '2', '3']
-//   var two = ['4', '5', '6', '7']
+tap.test('throws error if updated array lengths do not match', function(t){
+  t.plan(1)
+  var one = ['1', '2', '3']
+  var two = ['4', '5', '6', '7']
 
-//   var yarrBound = yarray(one)
-//   var update = yarrBound.update
-//   t.throws(update(two))
-// })
+  var yarrBound = yarray(one)
+  var update = yarrBound.update
+  t.throws(function(){update(two)})
+})
