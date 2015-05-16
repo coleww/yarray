@@ -3,7 +3,7 @@ YARRAY
 
 1.5 way data-binding between an array and some dom inputs.
 
-given an array, yarray creates html `<input type="text">` elements bound to each element of the yarray'd array<sup>1</sup>, and returns an update function for switching the bound array.
+given an array, yarray creates html `<input type="text">` elements bound to each element of the yarray'd array<sup>1</sup>, and returns an update function for switching out the bound array. its 1.5 way data-binding because data flows freely from the dom to the array, but the other way only sort of kinda. yarray does this with some pretty awful javascript, i bet it leaks memory or exposes your credit card information or something, idk whatever MIT LICENSE.
 
 ## -- useful for:
 ### // COMPLEX DATA ENTRY \\\\
@@ -21,8 +21,6 @@ EXAMPLE: A PET-NAMING APP
 > // time passes, cats are named, business logic is carried out in response to other user input.
 > yarr.update(dogNames)
 > // now the user can name some dogs! excellent!
-
-
 
 -----------------------------------------------------------------
 1. much like a pirate is bound to the pirate code, hence the "yarr"
