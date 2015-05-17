@@ -1,6 +1,6 @@
 {
   "name": "yarray",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bind an array to some inputs",
   "main": "index.js",
   "repository": "coleww/yarray",
