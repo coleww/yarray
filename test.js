@@ -1,12 +1,6 @@
 var tap = require('tape')
+var triggeChange = require('trigger-change')
 var yarray = require('./')
-
-function triggerChange(el, value){
-  el.value = value
-  var evt = document.createEvent("HTMLEvents")
-  evt.initEvent("change", false, true)
-  el.dispatchEvent(evt)
-}
 
 tap.test('binds all the things', function(t){
   t.plan(5)
